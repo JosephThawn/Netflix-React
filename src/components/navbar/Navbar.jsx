@@ -1,6 +1,7 @@
 import "./navbar.scss";
 import {ArrowDropDown, Notifications, Search} from "@material-ui/icons"
 import { useState } from "react";
+import me from "./me.jpg"
 
 
 const Navbar = () => {
@@ -32,7 +33,7 @@ const Navbar = () => {
           <span>KID</span>
           <Notifications className="icon"/>
           <img
-           src="https://images.pexels.com/photos/6899260/pexels-photo-6899260.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          src={me}
           />
           <div className="profile">
             <ArrowDropDown className="icon"/>
