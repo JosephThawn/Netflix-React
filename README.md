@@ -7,7 +7,7 @@
 
 
 
-<div align="center">Welcome to Netflix-React. </div>
+<div align="center">Welcome to Netflix-React </div>
 <br/>
 <div align="center">
 <kbd>
