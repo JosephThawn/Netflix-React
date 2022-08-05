@@ -2,6 +2,8 @@ import "./navbar.scss";
 import {ArrowDropDown, Notifications, Search} from "@material-ui/icons"
 import { useState } from "react";
 import me from "./me.jpg"
+import { Link} from "react-router-dom"
+
 
 
 const Navbar = () => {
@@ -24,8 +26,15 @@ const Navbar = () => {
          <span>Movies</span>
          <span>New and Popular</span>
          <span>My List</span>
-
-
+         <Link to="/" className="link">
+           <span>Homepage</span>
+         </Link>
+         <Link to="/series" className="link">
+           <span className="navbarmainLinks">Series</span>
+         </Link>
+         <Link to="/movies" className="link">
+         <span className="navbarmainLinks">Movies</span>
+         </Link>
 
         </div>
         <div className="right">
@@ -34,10 +43,12 @@ const Navbar = () => {
           <Notifications className="icon"/>
           <img
           src={me}
+          alt=""
           />
           <div className="profile">
             <ArrowDropDown className="icon"/>
             <div className="options">
+
               <span>Settings</span>
               <span>Logout</span>
             </div>
